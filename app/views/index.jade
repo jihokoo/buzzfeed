@@ -1,0 +1,7 @@
+extends layouts/default
+
+block content
+  section(data-ng-include data-src="'views/partials/navbar.html'")
+  section(data-ui-view)
+  script(type='text/javascript').
+      window.user = !{JSON.stringify(user)};
