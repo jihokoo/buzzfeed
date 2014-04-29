@@ -83,7 +83,7 @@ var User = require('./app/models/users.js')['User'];
 passport.use(new TwitterStrategy({
     consumerKey: 'ci0Q6SK0f8PXtr5gYarml7biZ',
     consumerSecret: 'YW7MZm9uXYQ5JSfDtXLjkwpM4LQuixRsjDUc2bwlhqQGD3qFRk',
-    callbackURL: 'http://172.18.74.10:3000/auth/twitter/callback'
+    callbackURL: 'http://buzzfeedjihokoo.herokuapp.com/auth/twitter/callback'
   },
   function(token, tokenSecret, profile, done){
     console.log("we get inside the verify callback")
