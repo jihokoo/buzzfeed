@@ -24,5 +24,8 @@
     "connect-mongo": "git+https://github.com/kcbanner/connect-mongo.git",
     "twitter": "~0.2.9",
     "util": "~0.10.3"
-  }
+  },
+  "scripts": {
+    "postinstall": "node node_modules/bower/bin/bower install"
+  },
 }
