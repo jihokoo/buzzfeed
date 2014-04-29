@@ -4,14 +4,16 @@
   "dependencies": {
     "jquery": "~1.9.1",
     "sass-bootstrap": "~3.0.0",
-    "angular": "~1.2.9",
-    "angular-resource": "~1.0.6",
-    "angular-cookies": "~1.0.6",
+    "angular": "latest",
+    "angular-resource": "latest",
+    "angular-cookies": "latest",
     "angular-mocks": "latest",
     "angular-route": "latest",
     "angular-bootstrap": "0.10.0",
     "angular-ui-router": "~0.2.10",
-    "angular-ui-select2": "~0.0.5"
+    "angular-ui-select2": "~0.0.5",
+    "angular-masonry": "~0.8.1",
+    "masonry": "~3.1.5"
   },
   "exportsOverride": {
     "bootstrap": {
