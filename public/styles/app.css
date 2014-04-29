@@ -169,6 +169,13 @@ section.outer-container {
   background-color: #58a5ff;
 }
 
+#twitter-icon {
+  width: 60%;
+  float: right;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
 #logged-in {
   width: 60%;
   float: right;

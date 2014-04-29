@@ -5,7 +5,7 @@
     </div>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li data-ng-hide="global.authenticated"><a class="navbar-link" href="/auth/twitter"><img src="/images/twitter.png" class="twitter-icon">&nbsp;&nbsp;&nbsp;Sign-In</a></li>
+        <li data-ng-hide="global.authenticated" id="twitter-icon"><a class="navbar-link" href="/auth/twitter"><img src="/images/twitter.png" class="twitter-icon">&nbsp;&nbsp;&nbsp;Sign-In</a></li>
         <li data-ng-show="global.authenticated" id="logged-in">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="personal-image" src="{{global.user.avatarUrl}}" data-ng-show="global.authenticated">@{{global.user.userName}}</a>
           <ul class="dropdown-menu">
