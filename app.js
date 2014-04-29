@@ -93,7 +93,7 @@ passport.use(new TwitterStrategy({
       }
       if(user){
         user.fullName = profile.displayName;
-        user.userName = profile.userName;
+        user.userName = profile.username;
         user.twitter = profile._json;
         avatarUrl = profile._json.profile_image_url;
         token = token;
