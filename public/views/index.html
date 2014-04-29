@@ -1,10 +1,13 @@
 <div class="container" id="main-body" data-ng-controller="IndexController" data-ng-init="searchNew()">
-  <div class="form-group" data-ui-view>
+  <div class="form-group" >
+    <a href="/auth/twitter"><h3>Please Sign-In with Twitter to Continue!</h3></a>
+  </div>
+  <div class="form-group" data-ui-view data-ng-show="global.authenticated">
     <h3 id="main-header">Search For Tweets!</h3>
     <form data-ng-submit="search()">
       <input type="text" class="form-control" placeholder="#" data-ng-model="keyWords" autofocus>
     </form>
-    <div class="tweets-container" data-ng-show="global.authenticated">
+    <div class="tweets-container">
       <button type="button" data-ng-repeat="tweet in initialTweets" class="individual-tweet clearfix" data-ng-dblclick="favorite(tweet)" data-ng-hide="!!global.user && !!global.user.tweets && idArray.indexOf(tweet.id_str) !== -1">
         <img class="profile-image" src="{{tweet.user.profile_image_url}}">
         <div class="tweet-content">
@@ -14,9 +17,6 @@
           <span>{{parseTwitterDate(tweet.created_at)}}</span>
         </div>
       </button>
-    </div>
-    <div class="tweets-container" data-ng-hide='global.authenticated'>
-      <a href="/auth/twitter"><h1>Please Sign-In with Twitter to Continue</h1></a>
     </div>
   </div>
 </div>
