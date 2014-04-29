@@ -123,6 +123,7 @@ var users = require('./app/controllers/users.js');
 
 app.get('/', routes.index);
 app.get('/login', users.login);
+app.get('/logout', users.logout);
 app.get('/user/:userName', users.findOne);
 app.get('/searchNew', function(req, res){
   twit.search('#buzzfeed OR @buzzfeed', {count: 100}, function(data){

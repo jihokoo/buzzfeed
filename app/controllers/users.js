@@ -5,7 +5,8 @@ exports.login = function(req, res){
 };
 
 exports.logout = function(req, res){
-  res.render('logout');
+  req.logout();
+  res.redirect('/');
 };
 
 exports.signin = function(req, res){
