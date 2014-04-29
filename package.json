@@ -4,6 +4,7 @@
   "description": "buzzfeed twitter application",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "postinstall": "node node_modules/bower/bin/bower install"
   },
   "author": "Ji Ho Koo",
