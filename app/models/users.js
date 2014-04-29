@@ -5,7 +5,7 @@
  */
 var mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost/buzzfeed');
-mongoose.connect('mongodb://jihokoo:n1aakvv8tt20ccjhuoqpe178th@ds037478.mongolab.com:37478/heroku_app24672534')
+mongoose.connect('mongodb://heroku_app24672534:n1aakvv8tt20ccjhuoqpe178th@ds037478.mongolab.com:37478/heroku_app24672534')
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function callback () {
@@ -13,6 +13,8 @@ db.once('open', function callback () {
 });
 
 var Schema = mongoose.Schema
+
+
 
 
 /**
