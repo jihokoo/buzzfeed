@@ -1,0 +1,79 @@
+/** Main styles go here **/
+// Directory:
+// SITE-WIDE
+// HOMEPAGE
+// BUTTON
+// NAV
+// PROFILE
+/// CTA-PROFILE
+// APPOINTMENTS
+// TEXT-EDITOR
+
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+@import 'sass-bootstrap/lib/bootstrap';
+html {
+  height: 100%;
+}
+body {
+  background: #fff;
+  height: 100%;
+  margin: 24px 0;
+  font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+h1 {
+  font-size: 24px;
+  line-height: 1;
+  color: inherit;
+}
+a {
+  color: #008cdd;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+p {
+  font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Gotham Rounded SSm A', 'Gotham Rounded SSm B', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.1;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 13px;
+}
+
+// Generic
+.center {
+  display: inline-block;
+  padding-left: none;
+  padding-right: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// SITE-WIDE
+///////////////////////
+///////////////////////
+///////////////////////
+.main-content-spacing {
+  margin-top: 40px;
+}

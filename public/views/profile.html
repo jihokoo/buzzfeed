@@ -1,0 +1,23 @@
+<div class="container clearfix" id="profile-body" data-ng-controller="UserController" data-ng-init="findOne()">
+  <div class="form-group clearfix">
+    <div class="user-bar clearfix">
+      <h3 class="user-name">{{global.user.fullName}}</h3>
+      <span class="user-details">@{{global.user.userName}}</span class="user-details">
+      <span class="user-details">{{global.user.twitter.description}}</span class="user-details">
+      <span class="user-details">[location: {{global.user.twitter.location}}]</span class="user-details">
+      <span class="user-details">[followers: {{global.user.twitter.followers_count}}]</span class="user-details">
+      <span class="user-details">[following: {{global.user.twitter.friends_count}}]</span>
+    </div>
+    <div>
+      <button type="button" data-ng-repeat="tweet in tweetsArray" class="individual-tweet favorited-tweet loaded" data-ng-dblclick="favorite(tweet)">
+        <img class="profile-image" src="{{tweet.user.profile_image_url}}">
+        <div class="tweet-content">
+          <span parse-url="props" ng-model="tweet.text"></span>
+          <br>
+          <br>
+          <span>{{parseTwitterDate(tweet.created_at)}}</span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>

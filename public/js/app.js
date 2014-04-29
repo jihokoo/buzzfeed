@@ -2,11 +2,13 @@ window.app = angular.module('buzzfeed',
   ['ngCookies',
   'ngResource',
   'ui.bootstrap',
+  'wu.masonry',
   'ui.router',
   'ui.select2',
   'buzzfeed.controllers',
   'buzzfeed.services',
   'buzzfeed.directives',
+  'buzzfeed.filters'
   ]);
 
 angular.module('buzzfeed.controllers',
