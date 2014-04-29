@@ -45,7 +45,7 @@ app.use(methodOverride());
 app.use(session({
   secret: 'keyboard cat',
   store: new mongoStore({
-    url: 'mongodb://heroku_app24672534:n1aakvv8tt20ccjhuoqpe178th@ds037478.mongolab.com:37478/heroku_app24672534',
+    url: 'mongodb://jihokoo:n1aakvv8tt20ccjhuoqpe178th@ds037478.mongolab.com:37478/heroku_app24672534',
     collection: 'sessions'
   }),
   proxy: false,
@@ -83,7 +83,7 @@ var User = require('./app/models/users.js')['User'];
 passport.use(new TwitterStrategy({
     consumerKey: 'ci0Q6SK0f8PXtr5gYarml7biZ',
     consumerSecret: 'YW7MZm9uXYQ5JSfDtXLjkwpM4LQuixRsjDUc2bwlhqQGD3qFRk',
-    callbackURL: 'http://buzzfeedjihokoo.herokuapp.com/auth/twitter/callback'
+    callbackURL: 'http://172.18.74.10:3000/auth/twitter/callback'
   },
   function(token, tokenSecret, profile, done){
     console.log("we get inside the verify callback")
