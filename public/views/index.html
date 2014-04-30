@@ -5,7 +5,7 @@
   <div class="form-group" data-ui-view data-ng-show="global.authenticated">
     <h3 id="main-header">Search For Tweets!</h3>
     <form data-ng-submit="search()">
-      <input type="text" class="form-control" placeholder="#" data-ng-model="keyWords" autofocus>
+      <input type="text" class="form-control" placeholder="#" data-ng-model="keyWords" autofocus required>
     </form>
     <div class="tweets-container">
       <button type="button" data-ng-repeat="tweet in initialTweets" class="individual-tweet clearfix" data-ng-dblclick="favorite(tweet)" data-ng-hide="!!global.user && !!global.user.tweets && idArray.indexOf(tweet.id_str) !== -1">
